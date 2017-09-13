@@ -624,7 +624,7 @@ def main():
     main function
     """
     parser = OptionParser(description="Python script to parse ISC DHCP lease file",
-                          prog="leases",
+                          prog=sys.argv[0],
                           usage="%prog [-a | --abandoned] [-s | --static] [filename]"
                          )
 
